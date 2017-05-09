@@ -20,7 +20,7 @@ def ustawienia():
             print "Błędne dane!"
             continue
 
-def losujloczby(ile, maks):
+def losujliczby(ile, maks):
     """Funkcja losuje ile unikalnych liczb całkowitych od 1 do maks"""
     liczby = []
     i = 0

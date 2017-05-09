@@ -26,6 +26,6 @@ def main(args):
     print "Wylosowane liczby:", liczby
     return 0
 
-if __name__ == "__main__:
+if __name__ == "__main__":
        import sys
-        sys.exit(sys.argv)
+       sys.exit(main(sys.argv))
