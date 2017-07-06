@@ -8,7 +8,7 @@ wyraz obcy: znaczenie1, znaczenie2
 Aby zakończyć wprowadzanie danych, podaj 0.
 """
 
-sFile = "slownik2.txt"   # nazwa pliku zawierającego wyrazy i ich tłumaczenia
+sFile = "slownik.txt"   # nazwa pliku zawierającego wyrazy i ich tłumaczenia
 slownik = {}    # pusty słownik
 # wobce = set() # pusty zbiór wyrazów obcych
 
@@ -35,7 +35,7 @@ def zapisz(slownik):
         # "sklejamy" znaczenia przecinkami w jeden napis
         znaczenia = ",".join(slownik[wobcy])
         # wyraz obcy:znaczenie1,znaczenie2,...
-        linia = ",".join([wobcy, znaczenia])
+        linia = ":".join([wobcy, znaczenia])
         print >>file1, linia    # zapisujemy w pliku kolejne linie
     file1.close()   # zamykamy plik
 
